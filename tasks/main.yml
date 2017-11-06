@@ -9,5 +9,12 @@
       skip: true
       paths:
         - '{{role_path}}/vars'
+  tags:
+    - helm
+    - kube
+
 
 - include: '{{kubernetes_helm_installer | default("tgz")}}.yml'
+  tags:
+    - helm
+    - kube
